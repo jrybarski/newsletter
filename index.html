@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container">
+      <img
+        src="assets/images/illustration-sign-up-mobile.svg"
+        alt="sign up mobile"
+        class="imgsignupmobile"
+      />
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="sign up desktop" class="imgsignupdesktop" />
+      <div class="content">
+        <h1>Stay updated!</h1>
+        <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form novalidate>
+          <p>
+            <label for="mail">
+              <span class="addressemail">Email address</span>
+
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                required
+                minlength="8"
+                placeholder="email@company.com"
+              />
+              <span class="error" aria-live="polite"></span>
+            </label>
+          </p>
+          <button class="subscribe">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="success">
+      <div class="successcontent">
+      <img
+        src="assets/images/icon-success.svg"
+        alt="success"
+        class="imgsuccess"
+      />
+      <h1>Thanks for subscribing!</h1>
+      <span class="confirmation"></span>
+        
+      </p>
+      <button class="dismiss">Dismiss message</button>
+    </div>
+    </div>
+
+    <!-- Success message end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
